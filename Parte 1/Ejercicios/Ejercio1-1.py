@@ -11,5 +11,3 @@ cuentaA2 = 100 - cursoDalto/crudoA*100
 cuentaB2 = 100 - 4/crudoB*100
 
 print(f"Ejercicio B: -Promerdio : {cuentaB2}% -Curso Dalto: {cuentaA2}")
-
-# Es una pavada
