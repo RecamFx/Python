@@ -9,8 +9,8 @@
 <p>Version de Python 3.12.2 o mejor</p>
 
 <h1 align = "center">🚀Empezamos</h1>
-En `documentos` o `descargas` escriba el siguiente comando para importar el repositorio
 
+En `documentos` o `descargas` escriba el siguiente comando para importar el repositorio:
 ```
 git clone https://github.com/RecamFx/Python
 ```
