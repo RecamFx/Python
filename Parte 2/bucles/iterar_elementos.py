@@ -12,6 +12,9 @@ for i in animales:
 #? Cocodrilo
 
 
+# ---------------------------------------------------------------------------------- #
+
+
 # Recorrer dos listas
 # Para eso tienen que tener la misma cantidad de caracteres
 # Usamos la funcion zip
@@ -61,10 +64,12 @@ for i in range(5): # Si le ponemos un numero arranca desde el 0 hasta el numero 
 
 
 # ---------------------------------------------------------------------------------- #
+
+
 lista3 = ["hola", "buenos", "dias", "como", "estas"]
 
 # Forma no optima de reccorer una lista con su indice
-for i in range(len(lista3)):
+for i in range(len(lista3)): #! No funciona para conjuntos
     print(lista3[i])
 #? hola
 #? buenos
@@ -96,17 +101,27 @@ for i in enumerate(lista3):
 #? Indice: 4, Valor: estas
 
 
-# Usando el else:
+# ---------------------------------------------------------------------------------- #
 
+
+
+# Usando el for/else:
+# Si no quedan elementos por recorrer se va al else
 
 for i in range(5):
     print(i)
 else:
     print("El bucle termino!")
-    
+
 #? 0
 #? 1
 #? 2
 #? 3
 #? 4
 #? El bucle termino
+
+
+
+
+
+#todo FUNCIONA IGUAL PARA TUPLAS Y CONJUNTOS
