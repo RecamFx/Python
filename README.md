@@ -12,6 +12,11 @@
 1. Version de Python 3.12.2 o mejor
 2. Se recomineda usar <a href = "https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments">Better Comments</a>, ya que facilita la legibilidad de los comentarios
 
+<h1 align = "center">🤙Aclaraciones</h1>
+
+1. Los comentarios con ```#?``` significa lo que va a imprimir la consola (es para que no andes ejecutando)
+
+
 <h1 align = "center">🚀Empezamos</h1>
 
 En `documentos` o `descargas` escriba el siguiente comando para importar el repositorio:
