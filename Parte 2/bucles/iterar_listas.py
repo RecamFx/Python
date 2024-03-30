@@ -11,9 +11,6 @@ for i in animales:
 #? Gato
 #? Cocodrilo
 
-#todo for i in range(4):
-#todo   print(animales[i])
-
 
 # Recorrer dos listas
 # Para eso tienen que tener la misma cantidad de caracteres
@@ -51,3 +48,22 @@ for i in range(3,10): # Si ecribo dos valores va a empezar a contar desde el pri
 #? 9
 #? 8
 #? 4
+
+
+for i in range(5): # Si le ponemos un numero arranca desde el 0 hasta el numero que le pusimos (sin contar el ultimo)
+    print(i)
+    
+#? 0
+#? 1
+#? 2
+#? 3
+#? 4
+
+
+# ---------------------------------------------------------------------------------- #
+lista3 = ["hola", "buenos", "dias", "como", "estas"]
+
+# Forma no optima de reccorer una lista con su indice
+#todo for i in range(len(lista3)):
+#todo   print(lista3[i])
+
