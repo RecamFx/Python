@@ -8,6 +8,7 @@
 
 
 <h1 align = "center">⚙️Requerimientos</h1>
+
 1. Version de Python 3.12.2 o mejor
 2. Se recomineda usar <a href = "https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments">Better Comments</a>, ya que facilita la legibilidad de los comentarios
 
