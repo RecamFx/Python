@@ -64,6 +64,49 @@ for i in range(5): # Si le ponemos un numero arranca desde el 0 hasta el numero 
 lista3 = ["hola", "buenos", "dias", "como", "estas"]
 
 # Forma no optima de reccorer una lista con su indice
-#todo for i in range(len(lista3)):
-#todo   print(lista3[i])
+for i in range(len(lista3)):
+    print(lista3[i])
+#? hola
+#? buenos
+#? dias
+#? como
+#? estas
 
+# Forma optima de reccorer una lista con su indice
+# La funcion enumerate() junta el numero del inice con el valor de la lista y lo imprime como una #!TUPLA
+for i in enumerate(lista3):
+    print(i)
+    
+# Indice y su valor
+#? (0, 'hola')
+#? (1, 'buenos')
+#? (2, 'dias')
+#? (3, 'como')
+#? (4, 'estas')
+
+
+
+for i in enumerate(lista3):
+    print(f"Indice: {i[0]}, Valor: {i[1]}")
+
+#? Indice: 0, Valor: hola
+#? Indice: 1, Valor: buenos
+#? Indice: 2, Valor: dias
+#? Indice: 3, Valor: como
+#? Indice: 4, Valor: estas
+
+
+# Usando el else:
+
+
+for i in range(5):
+    print(i)
+else:
+    print("El bucle termino!")
+    
+#? 0
+#? 1
+#? 2
+#? 3
+#? 4
+#? El bucle termino
