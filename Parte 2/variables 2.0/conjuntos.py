@@ -23,3 +23,24 @@ conjunto1 = frozenset({"Hoka", "Hola2"})
 conjunto2 = {conjunto1, "Hola4"}
 
 print(conjunto2) #? {frozenset({'Hola2', 'Hoka'}), 'Hola4'} 
+
+
+# Teoria de conjuntos
+conjunto1 = {1, 2, 3}
+conjunto2 = {3, 2, 1, 7, 4, 9}
+
+# El metodo issubset nos devuelve si un conjunto es un subconjunto de otro
+# Un subconjunto es un conjunto chico este dentro de otro mas grande
+resultado = conjunto1.issubset(conjunto2)
+#todo resultado = conjunto1 <= conjunto2
+print(resultado) #? True
+resultado = conjunto2.issubset(conjunto1)
+print(resultado) #? False
+
+# Metodo issuperset
+# Un superconjunto es si un conjunto grande posee a un conjunto chico
+resultado = conjunto1.issuperset(conjunto2)
+#todo resultado = conjunto1 > conjunto2
+print(resultado) #? False
+resultado = conjunto2.issuperset(conjunto1)
+print(resultado) #? True
