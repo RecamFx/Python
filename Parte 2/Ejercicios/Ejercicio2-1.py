@@ -26,36 +26,36 @@ print(f"Su nuevo profesor es: {profe}, y su asistente: {asistente}")
 
 
 
-#todo OTRA SOLUCION:
+#todo OTRA SOLUCION: (Usar ctrl + k + c para descomentar)
 
-#funciòn para obtener al asistente y al profesor segun la edad.
-def obtener_compañeros(cantidad_de_compañeros):
+# #funciòn para obtener al asistente y al profesor segun la edad.
+# def obtener_compañeros(cantidad_de_compañeros):
     
-    #creando la lista con los compañeros
-    compañeros = []
+#     #creando la lista con los compañeros
+#     compañeros = []
     
-    #ejecutando un for para pedir informaciòn de cada compañero
-    for i in range(cantidad_de_compañeros):
-        nombre = input("ingrese el nombre del compañero: ")
-        edad = int(input("ingrese la edad del compañero: "))
-        compañero = (nombre,edad)
+#     #ejecutando un for para pedir informaciòn de cada compañero
+#     for i in range(cantidad_de_compañeros):
+#         nombre = input("ingrese el nombre del compañero: ")
+#         edad = int(input("ingrese la edad del compañero: "))
+#         compañero = (nombre,edad)
         
-        #agregando la informaciòn a la lista
-        compañeros.append(compañero)
+#         #agregando la informaciòn a la lista
+#         compañeros.append(compañero)
         
-    #ordenandolos de menor a mayor segùn su edad    
-    compañeros.sort(key=lambda x:x[1])
+#     #ordenandolos de menor a mayor segùn su edad    
+#     compañeros.sort(key=lambda x:x[1])
     
-    #compañeros[x] devuelve una tupla con (nombre,edad) y despues accedemos al nombre
-    #para definir al asistente y al profesor.
-    asistente = compañeros[0][0]
-    profesor = compañeros[-1][0]
+#     #compañeros[x] devuelve una tupla con (nombre,edad) y despues accedemos al nombre
+#     #para definir al asistente y al profesor.
+#     asistente = compañeros[0][0]
+#     profesor = compañeros[-1][0]
     
-    #retornamos una tupla
-    return asistente,profesor
+#     #retornamos una tupla
+#     return asistente,profesor
 
-#desempaquetamos lo que nos retorna la funciòn
-asistente,profesor = obtener_compañeros(5)
+# #desempaquetamos lo que nos retorna la funciòn
+# asistente,profesor = obtener_compañeros(5)
 
-#mostrando el resultado
-print(f"El profesor es: {profesor} y su asistente es {asistente}")
+# #mostrando el resultado
+# print(f"El profesor es: {profesor} y su asistente es {asistente}")
