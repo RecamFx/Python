@@ -47,4 +47,4 @@ resultadoBooleano = bool(False)
 print(resultadoBooleano) #? False
 
 resultadoBooleano = bool(None)
-print(resultadoBooleano) #? False
+print(resultadoBooleano) #? False asd
