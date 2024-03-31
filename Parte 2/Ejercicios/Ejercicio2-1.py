@@ -24,6 +24,8 @@ asistente = alumnos[edad.index(menor)]
 print(f"Su nuevo profesor es: {profe}, y su asistente: {asistente}") 
 
 
+
+
 #todo SOLUCION 2:
 
 #funciòn para obtener al asistente y al profesor segun la edad.
