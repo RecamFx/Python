@@ -5,7 +5,7 @@
 # Quienes son?
 
 
-#todo SOLUCION 1 :
+#todo MI SOLUCION:
 alumnos = []
 edad = []
 
@@ -26,7 +26,7 @@ print(f"Su nuevo profesor es: {profe}, y su asistente: {asistente}")
 
 
 
-#todo SOLUCION 2:
+#todo OTRA SOLUCION:
 
 #funciòn para obtener al asistente y al profesor segun la edad.
 def obtener_compañeros(cantidad_de_compañeros):
