@@ -69,3 +69,23 @@ print(resultadoALL) #? True
 
 numeoros = [10, 34, 278]
 print(sum(numeoros)) #? 322
+
+
+#---------------------------------------------------------------------------------------------------------#
+
+# FILTER()
+# Le envia a una funcion un objeto iterable separado por sus caracteres, es decir en este caso 1,2,3,4,5,6,7,8,9. 
+# Y los mete en una lista a los que se les returnea True
+
+# Es decir, numero al que le returneemos true, lo filtramos en una lista aparte, eso es lo que hace Filter()
+
+# En este caso decimos que a los numeros pares les returneamos True
+# Por ende se van a mostrar solo esos
+
+lista = [1,2,3,4,5,6,7,8,9]
+def funcion(num):
+    if(num%2 == 0): # Par impar
+        return True
+
+variable = filter(funcion, lista)
+print(list(variable)) #? [2, 4, 6, 8]
