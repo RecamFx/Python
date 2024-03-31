@@ -48,3 +48,24 @@ print(resultadoBooleano) #? False
 
 resultadoBooleano = bool(None)
 print(resultadoBooleano) #? False
+
+
+
+#---------------------------------------------------------------------------------------------------------#
+
+
+# ALL()
+# Retorna true si todos los valores son verdaderos
+# Es decir, retorna false si algunos de estos elementos se presentan: 0, vacio, False, none
+
+resultadoALL = all([192, "asd", [5877, "hf"]])
+print(resultadoALL) #? True
+
+
+#---------------------------------------------------------------------------------------------------------#
+
+# SUM()
+# Suma todos los valores de un iterable
+
+numeoros = [10, 34, 278]
+print(sum(numeoros)) #? 322
