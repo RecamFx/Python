@@ -12,16 +12,20 @@ archivo = open("Parte 3\\archivos\\notas.txt", encoding="UTF-8")
 # -----------------------------------------------------------------------------------------------------------------------#
 # Usamos el metodo read() para leer un txt
 #todo print(archivo.read())
+#? Buenos dias, como estás?
+#? Stephen Curry
 
 # -----------------------------------------------------------------------------------------------------------------------#
 # Para leer lineas del archivo txt usamos readlines()
 # Los \n son separaciones entre lineas
 #todo print(archivo.readlines())
+#? ['Buenos dias, como estás?\n', 'Stephen Curry']
 
 # -----------------------------------------------------------------------------------------------------------------------#
 # Podemos usar readline()
 # Sirve para leer la primera linea o una cantidad de caracteres asignados
-print(archivo.readline(10)) # Leemos diez caracteres
+print(archivo.readline(10)) # Leemos diez caracteres 
+#? Buen Dia
 
 # -----------------------------------------------------------------------------------------------------------------------#
 # Cerrar el archivo
