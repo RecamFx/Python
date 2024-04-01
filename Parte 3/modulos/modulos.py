@@ -52,7 +52,9 @@ print(__name__) # Nos va a tirar main porque se le define main al modulo que se 
 
 #--------------------------------------------------------------------------------------------------------------------#
 # Importando modulos desde una carpeta
+# Enrutamiento de modulos
 
-import funcionesModulos.moduloEjemplo as me
+import funcionesModulos.moduloEjemplo
 
-print(me.saludar("Stephen")) #? Hola Stephen!
+print(funcionesModulos.moduloEjemplo.saludar("Stephen")) #? Hola Stephen!
+print(funcionesModulos.moduloEjemplo.saludar2("Stephen")) #? NASHEI Stephen!
