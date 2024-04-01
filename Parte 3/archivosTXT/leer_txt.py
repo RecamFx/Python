@@ -2,7 +2,7 @@
 # Open es como un import pero para archivos que no son python
 
 # El encoding="UTF-8 sirve para que funcionen las tildes
-archivo = open("Parte 3\\archivos\\notas.txt", encoding="UTF-8")
+archivo = open("Parte 3\\archivosTXT\\notas.txt", encoding="UTF-8")
 
 
 # -----------------------------------------------------------------------------------------------------------------------#
