@@ -47,3 +47,12 @@ import modulo_saludar as kkkk
 hola =  kkkk.__name__
 print(hola) #? modulo_saludar
 print(__name__) # Nos va a tirar main porque se le define main al modulo que se ejecute, que es este. #? __main__
+
+
+
+#--------------------------------------------------------------------------------------------------------------------#
+# Importando modulos desde una carpeta
+
+import funcionesModulos.moduloEjemplo as me
+
+print(me.saludar("Stephen")) #? Hola Stephen!
