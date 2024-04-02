@@ -27,11 +27,10 @@ print(DataFrame["nombre"])
 
 
 # --------------------------------------------------------------------------------------------------------------------------- #
+print("--------------------------------")
 
 
 # Podemos cambiar el encabezado
-print("--------------------------------")
-
 # Con el atributo names= le podemos decir como se va a llamar cada columna
 DataFrame2 = pd.read_csv("Parte 3\\archivosCSV\\leer.csv", names=["name", "lastname", "age"])
 print(DataFrame2)
@@ -44,3 +43,54 @@ print(DataFrame2)
 
 
 # La diferencia es que ahora nos muestra nombre, apellid y edad, porque es como que lo toma parte
+
+
+# --------------------------------------------------------------------------------------------------------------------------- #
+print("--------------------------------")
+
+
+# Ordenando los valores segun (en este cado la edad)
+DataFrame3 = pd.read_csv("Parte 3\\archivosCSV\\leer.csv")
+
+
+# Forma ascendente
+# Usando el metodo sort_values() dentro del parentesis ponemos el valor a ordenar
+DataFrame3_Ordenado_Asendente = DataFrame3.sort_values("edad") # Es importante almacenarlo en otro valor ya que es un valor anonimo
+
+print(DataFrame3_Ordenado_Asendente)
+#?     nombre  apellido  edad
+#? 0  Stephen     Curry    36
+#? 2   LeBron     James    39
+#? 3     Manu  Ginobili    46
+#? 1  Michael    Jordan    61
+
+
+print("--------------------------------")
+
+# Forma descendente
+DataFrame3_Ordenado_Desendente = DataFrame3.sort_values("edad", ascending=False) 
+# Usamos el atributo ascending, que ordena de forma ascendente por defecto, y lo configuramos false para que ordene de forma descendente
+
+print(DataFrame3_Ordenado_Desendente)
+#?     nombre  apellido  edad
+#? 1  Michael    Jordan    61
+#? 3     Manu  Ginobili    46
+#? 2   LeBron     James    39
+#? 0  Stephen     Curry    36
+
+
+
+# --------------------------------------------------------------------------------------------------------------------------- #
+print("--------------------------------")
+
+
+# Que pasa si quiero concatenar dos data frames?
+
+df1 = pd.read_csv("Parte 3\\archivosCSV\\leer.csv")
+df2 = pd.read_csv("Parte 3\\archivosCSV\\leer.csv")
+
+
+# Usando el metodo concat() y dentro del parentesis le pasamos una lista con los archivos a concatenar
+df_Concatenado = pd.concat([df1, df2])
+
+print(df_Concatenado)
