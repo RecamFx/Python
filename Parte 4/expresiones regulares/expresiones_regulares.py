@@ -125,3 +125,6 @@ resultado = re.findall(r"\d|Hola",texto) #? ['Hola', '1', '2', '3', '0']
 
 
 print(resultado)
+
+
+# Faltaron los signos *, + y el -
