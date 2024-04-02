@@ -15,6 +15,7 @@
 <h1 align = "center">🤙Aclaraciones</h1>
 
 1. Los comentarios con ```#?``` significa lo que va a imprimir la consola (es para que no andes ejecutando)
+2. La parte 1 y 2 son la seccion inicial, la parte 3 es la seccion intermedia y la parte 4 es la seccion avanzada del curso
 
 
 <h1 align = "center">🚀Empezamos</h1>
