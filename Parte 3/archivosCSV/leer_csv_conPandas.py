@@ -94,3 +94,81 @@ df2 = pd.read_csv("Parte 3\\archivosCSV\\leer.csv")
 df_Concatenado = pd.concat([df1, df2])
 
 print(df_Concatenado)
+#?     nombre  apellido  edad
+#? 0  Stephen     Curry    36
+#? 1  Michael    Jordan    61
+#? 2   LeBron     James    39
+#? 3     Manu  Ginobili    46
+#? 0  Stephen     Curry    36
+#? 1  Michael    Jordan    61
+#? 2   LeBron     James    39
+#? 3     Manu  Ginobili    46
+
+
+
+# --------------------------------------------------------------------------------------------------------------------------- #
+print("--------------------------------")
+
+# Accediendo a filas especificas
+
+
+df = pd.read_csv("Parte 3\\archivosCSV\\leer.csv")
+
+# Usando el metodo head() en el parentesis asignamos hasta que fila desea mostrar empezando desde arriba a abajo
+primera_fila = df.head(3)
+print(primera_fila)
+#?     nombre apellido  edad
+#? 0  Stephen    Curry    36
+#? 1  Michael   Jordan    61
+#? 2   LeBron    James    39
+
+
+print("--------------------------------")
+# Usando el metodo tail() en el parentesis asignamos hasta que fila desea mostrar empezando desde abajo a arriba
+ultima_fila = df.tail(3)
+print(ultima_fila)
+
+#?     nombre  apellido  edad
+#? 1  Michael    Jordan    61
+#? 2   LeBron     James    39
+#? 3     Manu  Ginobili    46
+
+
+
+
+# --------------------------------------------------------------------------------------------------------------------------- #
+
+# Accediento a la cantidad de filas y columnas
+
+# Usamos el metodo shape
+filas_y_columnas = df.shape
+# Nos devuelve primero la cantidad de filas y despues la cantidad de columnas
+print(filas_y_columnas) #? (4, 3)
+
+
+# Podemos usar la funcion de desempaquetar para seprara estos valores
+filas, columnas = df.shape
+print(filas) #? 4
+print(columnas) #? 3
+
+
+
+
+# --------------------------------------------------------------------------------------------------------------------------- #
+
+# Obteniendo datos estadisticos
+# Esto es mas para analisis de datos
+
+# Usamos el metodo describe()
+df_info = df.describe()
+print(df_info)
+
+#?             edad
+#? count   4.000000
+#? mean   45.500000
+#? std    11.150486
+#? min    36.000000
+#? 25%    38.250000
+#? 50%    42.500000
+#? 75%    49.750000
+#? max    61.000000
