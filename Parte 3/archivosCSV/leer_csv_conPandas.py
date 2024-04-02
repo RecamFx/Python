@@ -172,3 +172,65 @@ print(df_info)
 #? 50%    42.500000
 #? 75%    49.750000
 #? max    61.000000
+
+
+
+
+# --------------------------------------------------------------------------------------------------------------------------- #
+print("--------------------------------")
+
+# Accediendo a un elemento en especifico
+
+# Usamos el metodo loc[], entre corches ponemos de primer valor, al indice de la fila, que fila es? Y al segundo el nombre de la columna
+especifico_loc = df.loc[0, "nombre"]
+print(especifico_loc) #? Stephen
+
+# Con iloc[] accedemos segun sus indices, primero fila despues columna
+especifico_iloc = df.iloc[0,1]
+print(especifico_iloc) #? Curry
+
+
+
+
+# --------------------------------------------------------------------------------------------------------------------------- #
+print("--------------------------------")
+
+# Accediendo a todas las filas de una columna
+
+# Usando slizing
+# Le pedimos que acceda a todas las filas, y despues le decimos de que columna tiene que ser
+apellidos = df.iloc[:,1]
+print(apellidos)
+#? 0       Curry
+#? 1      Jordan
+#? 2       James
+#? 3    Ginobili
+#? Name: apellido, dtype: object
+
+print("--------------------------------")
+
+# Y lo podemos hacer a la inversa tambien
+Stephen = df.iloc[0, :]
+print(Stephen)
+
+#? nombre      Stephen
+#? apellido      Curry
+#? edad             36
+#? Name: 0, dtype: object
+
+
+
+
+# --------------------------------------------------------------------------------------------------------------------------- #
+print("--------------------------------")
+
+# Accediendo a filas que son mayores de 40 de edad
+
+# Le decimos que acceda a todos los elementos (segundo parametro) que son nombre, apellido y edad
+# Y que acceda a los elementos edad que sean mayores que cuarenta (prier parametro)
+mayor40 = df.loc[df["edad"]>40, :]
+print(mayor40)
+
+#?     nombre  apellido  edad
+#? 1  Michael    Jordan    61
+#? 3     Manu  Ginobili    46
